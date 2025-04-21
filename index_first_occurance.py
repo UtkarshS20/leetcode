@@ -1,4 +1,6 @@
 def strStr(haystack: str, needle: str) -> int:
+    n = len(haystack)
+    m = len(needle)
     # index = 0
     # hay_list = haystack.split(needle)
     # if needle not in haystack:
@@ -14,8 +16,11 @@ def strStr(haystack: str, needle: str) -> int:
     #         else:
     #             break
     #     return index - 1
-     return haystack.find(needle)
-                
+    #  return haystack.find(needle)
+    for i in range(n-m+1):
+        if haystack[i:i+m]==needle:
+            return i
+    return -1                
             
         # print(hay_list)
         # return len(hay_list[0]) 
