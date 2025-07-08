@@ -3,7 +3,6 @@ import pandas as pd
 def delete_duplicate_emails(person: pd.DataFrame) -> None:
     person.sort_values(by='id',ascending=True,inplace=True)
     person = person.drop_duplicates(subset="email", keep="first")
-    return person
     
 
 person = pd.DataFrame([[1, "john@example.com"],
