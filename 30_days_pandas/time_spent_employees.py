@@ -5,6 +5,8 @@ def total_time(employees: pd.DataFrame) -> pd.DataFrame:
     employees = employees.groupby(["event_day", "emp_id"]).total_time.sum().reset_index()
     employees = employees.sort_values(by="emp_id", ascending=True).rename(columns={"event_day":"day"})
     return employees
+
+
 employees = pd.DataFrame([[1, "2020-11-28", 4, 32 ],
 [1, "2020-11-28", 55, 200],
 [1, "2020-12-3", 1, 42 ],
