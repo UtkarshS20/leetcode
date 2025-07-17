@@ -7,10 +7,10 @@ def total_time(employees: pd.DataFrame) -> pd.DataFrame:
     return employees
 
 
-employees = pd.DataFrame([[1, "2020-11-28", 4, 32 ],
+employees = pd.DataFrame([[1, "2020-11-28", 4, 32],
 [1, "2020-11-28", 55, 200],
-[1, "2020-12-3", 1, 42 ],
-[2, "2020-11-28", 3, 33 ],
+[1, "2020-12-3", 1, 42],
+[2, "2020-11-28", 3, 33],
 [2, "2020-12-9", 47, 74]],
 columns=["emp_id", "event_day", "in_time", "out_time"])
 
