@@ -3,9 +3,7 @@ from typing import List
 # brute solution
 class Solution:
     def setZeroes(self, matrix: List[List[int]]) -> None:
-        """
-        Do not return anything, modify matrix in-place instead.
-        """
+
         row_to_zero = []
         col_to_zero = []
         for m, arr in enumerate(matrix):
